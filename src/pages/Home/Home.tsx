@@ -1,8 +1,12 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 
-const Home: FunctionComponent<{}> = () => (
-  <section className="py-0">
-   HOME
+const Home = () => (
+  <section className="flex-grow-1 py-0">
+    <article>
+      <p className="text-center">
+        This is a project that&apos;s intended to show offline capabilities by using Service Workers
+      </p>
+    </article>
   </section>
 );
 

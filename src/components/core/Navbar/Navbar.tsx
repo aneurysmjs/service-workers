@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import classNames from 'classnames';
 
-import './Navbar.scss';
-
 interface PropsType {
   history: {
     push(s: string): void
@@ -19,9 +17,9 @@ const Navbar = ({ history }: PropsType) => {
   };
 
   return (
-    <nav className="navbar fixed-top navbar-expand-lg navbar-light" id="mainNav">
+    <nav className="navbar navbar-expand-lg navbar-light mb-5">
       <div className="container">
-        <Link className="navbar-brand" to="/">Jero.io</Link>
+        <Link className="navbar-brand" to="/">Service Workers</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -51,17 +49,6 @@ const Navbar = ({ history }: PropsType) => {
                 }}
               >
                   Home
-                {/* <span className="sr-only">(current)</span> */}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                onClick={() => {
-                  handleClick('/playground');
-                }} 
-              >
-                Playground
               </a>
             </li>
           </ul>

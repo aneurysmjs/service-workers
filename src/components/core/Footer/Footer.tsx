@@ -7,48 +7,7 @@ const Footer = () => (
     <div className="footer-top">
       <div className="container">
         <div className="row">
-          <div className="footer-col col-md-4">
-            <h3>Location</h3>
-            <p>
-              <i className="fa fa-map-marker" aria-hidden="true" /> Москва, Россия
-            </p>
-          </div>
-          <div className="footer-col col-md-4">
-            <h3>Follow me</h3>
-            <ul className="list-inline">
-              <li className="list-inline-item">
-                <a
-                  className="btn-social btn-outline"
-                  target="_blank"
-                  href="https://twitter.com/aneurysmjs"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-fw fa-twitter" />
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a
-                  className="btn-social btn-outline"
-                  target="_blank"
-                  href="https://www.linkedin.com/in/jeronimo-velasquez-606493bb/"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-fw fa-linkedin" />
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a
-                  className="btn-social btn-outline"
-                  target="_blank"
-                  href="https://github.com/aneurysmjs"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-fw fa-github" />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-col col-md-4">
+          <div className="col">
             <h3>Made with love</h3>
             <div className="d-flex align-items-center justify-content-around"> 
               <figure className="footer__thumbnails">
@@ -59,9 +18,6 @@ const Footer = () => (
               </figure>
               <figure className="footer__thumbnails">
                 <img className="img-fluid" src="assets/img/webpack-logo.png" alt="webpack" />
-              </figure>
-              <figure className="footer__thumbnails">
-                <img className="img-fluid" src="assets/img/firebase-logo.png" alt="firebase" />
               </figure>
             </div>
           </div>
