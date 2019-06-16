@@ -1,0 +1,30 @@
+
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "noImplicitThis": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    // this enables stricter inference for data properties on `this`
+    "strict": true,
+    // if using webpack 2+ or rollup, to leverage tree shaking:
+    "module": "esNext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "api": [
+        "./src/api/api.ts"
+      ]
+    },
+    "lib": [
+      "dom",
+      "es6"
+    ]
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
