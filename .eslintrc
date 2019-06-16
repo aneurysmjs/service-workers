@@ -20,7 +20,8 @@
   ],
   "plugins": [
     "@typescript-eslint",
-    "react"
+    "react",
+    "react-hooks"
   ],
   "rules": {
     "indent": [
@@ -54,6 +55,8 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/array-type": ["off"],
     "@typescript-eslint/indent": ["error", 2],
-    "@typescript-eslint/no-object-literal-type-assertion": "off"
+    "@typescript-eslint/no-object-literal-type-assertion": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
