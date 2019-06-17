@@ -1,6 +1,6 @@
-
 {
   "compilerOptions": {
+    "allowJs": true,
     "jsx": "react",
     "noImplicitThis": true,
     "allowSyntheticDefaultImports": true,
@@ -22,6 +22,9 @@
     "lib": [
       "dom",
       "es6"
+    ],
+    "types": [
+      "./src/service-worker.d.ts"
     ]
   },
   "include": [
