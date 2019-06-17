@@ -85,15 +85,17 @@ module.exports = (mode) => {
         template: setupPath('../src/index.html'),
       }),
       // copy files and folders to specific paths.
-      new CopyWebpackPlugin([{
-        // Copy `assets` contents to {output}/assets/
-        from: 'src/assets',
-        to: 'assets',
-        ignore: [
-          // Doesn't copy any files with a scss extension
-          '*.scss',
+      new CopyWebpackPlugin(
+        [
+          // Copy `assets` contents to {output}/assets/
+          { from: 'src/assets', to: 'assets/' },
+          'src/service-worker.js',
+          'src/manifest.json'
         ],
-      }]),
+        {
+          ignore: ['.DS_Store',  '*.scss',]
+        }
+      ),
     ],
   };
 };

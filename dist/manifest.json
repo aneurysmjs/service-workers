@@ -1,0 +1,26 @@
+{
+  "name": "ReactPWA",
+  "short_name": "ReactPWA",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#2A3443",
+  "description": "A demo app for a service workers",
+  "theme_color": "#2A3443",
+  "icons": [
+    {
+      "src": "./assets/img/bootstrap-logo.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/react-logo.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/webpack-logo.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}

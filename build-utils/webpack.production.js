@@ -19,7 +19,7 @@ module.exports = ({ mode }) => {
     output: {
       path: paths.dist,
       publicPath: '/',
-      filename: '[name].[hash].js',
+      filename: '[name].js',
       chunkFilename: '[id].[hash].chunk.js',
     },
 

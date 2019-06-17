@@ -10,7 +10,8 @@
     "dev": "yarn webpack-dev-server --env.mode development",
     "prod": "rimraf dist && yarn webpack --env.mode production",
     "prod:analyze": "yarn prod --env.presets analyze",
-    "webpack": "node_modules/.bin/webpack"
+    "webpack": "node_modules/.bin/webpack",
+    "serve": "http-server dist"
   },
   "config": {
     "commitizen": {
@@ -60,6 +61,7 @@
     "file-loader": "4.0.0",
     "hard-source-webpack-plugin": "0.13.1",
     "html-webpack-plugin": "4.0.0-beta.4",
+    "http-server": "0.11.1",
     "json-server": "0.15.0",
     "mini-css-extract-plugin": "0.7.0",
     "node-sass": "4.12.0",

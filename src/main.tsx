@@ -7,9 +7,6 @@ import ReactDom from 'react-dom';
  */
 import 'intersection-observer';
 
-// import main CSS styles
-import './assets/scss/styles.scss';
-
 import { App } from '@/components/core/App';
 
 const AppWrapper = () => (
@@ -17,9 +14,27 @@ const AppWrapper = () => (
     <App />
   </React.StrictMode>
 );
-
+// @ts-ignore
 const app = document.querySelector('#app');
 
 if (app !== null) {
   ReactDom.render(<AppWrapper />, app);
+}
+
+// @ts-ignore
+if ('serviceWorker' in navigator) {
+  // @ts-ignore
+  window.addEventListener('load', async () => {
+    type Reg = unknown;
+
+    try {
+      // @ts-ignore
+      const reg: Reg = await navigator.serviceWorker.register('/service-worker.js');
+      // eslint-disable-next-line no-console
+      console.log('Service worker registered.', reg);
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error('Service worker error.', err);
+    }
+  });
 }
